@@ -1,0 +1,105 @@
+.pokemon__list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.load-more {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+
+.load-more:hover {
+  background-color: #2980b9;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 20px 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Add to your existing PokemonList.css file */
+
+.search-container {
+    margin: 0 auto 25px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 12px 20px;
+    padding-right: 40px; /* Space for the clear button */
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    transition: all 0.3s;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #ff9966;
+    box-shadow: 0 0 8px rgba(255, 153, 102, 0.4);
+  }
+  
+  .clear-search {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  .clear-search:hover {
+    color: #333;
+  }
+  
+  .no-results {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 18px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 18px;
+  }
+  
+  
